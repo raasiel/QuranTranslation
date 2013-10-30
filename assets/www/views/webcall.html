@@ -1,0 +1,16 @@
+<div class="topcoat-list__container list" ng-controller="WebCallController">
+    <h3 class="topcoat-list__header">Status : {{callresult.statusCode}}</h3>
+    <h3 class="topcoat-list__header">Message : {{callresult.message}}</h3>
+    <h3 class="topcoat-list__header">Debug : {{callresult.debug}}</h3>
+    <h3 class="topcoat-list__header">Headers : {{callresult.headers}}</h3>
+    <textarea class="topcoat-text-input full" ng-model="callresult.body" style="height: 300px">
+
+    </textarea>
+    <h3 class="topcoat-list__header">Headers</h3>
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item" ng-repeat="(key,value) in callresult.headers" >
+            <div class="list-action-div"  ng-click="view(server)">{{key}}:{{value}}</div>
+        </li>
+    </ul>
+
+</div>
