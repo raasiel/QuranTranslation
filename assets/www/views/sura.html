@@ -1,0 +1,8 @@
+<div class="topcoat-list__container list">
+    <h3 class="topcoat-list__header bangla">অনুবাদসমূহ</h3>
+    <ul class="topcoat-list">
+        <li class="topcoat-list__item " ng-repeat="sura in QuranData.Sura" >
+            <div class="list-action-div bangla"  ng-click="view($index,sura[6])">{{sura[5]}} ({{sura[6]}}) </div>
+        </li>
+    </ul>
+</div>

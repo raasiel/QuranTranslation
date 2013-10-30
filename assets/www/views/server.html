@@ -1,0 +1,29 @@
+<div ng-controller="ServerEditController">
+<div>
+    <h2 class="topcoat-list__header">New Server</h2>
+</div>
+<div>
+    <h3 class="topcoat-list__header">Name</h3>
+    <div><input class="topcoat-text-input wide" type="text" ng-model="server.name" /></div>
+</div>
+<div>
+    <h3 class="topcoat-list__header">TFS Web Access Url</h3>
+    <div><input class="topcoat-text-input wide" type="text" ng-model="server.url" /></div>
+</div>
+<div>
+    <h3 class="topcoat-list__header">Username</h3>
+    <div><input class="topcoat-text-input wide" type="text" ng-model="server.user" /></div>
+</div>
+<div>
+    <h3 class="topcoat-list__header">Domain</h3>
+    <div><input class="topcoat-text-input wide" type="text" ng-model="server.domain" /></div>
+</div>
+<div>
+    <h3 class="topcoat-list__header">Password</h3>
+    <div><input class="topcoat-text-input wide" type="text" ng-model="server.pass" /></div>
+</div>
+<div class="middle">
+    <input type="button" ng-click="save()" value="Save" class="topcoat-button left half"/>
+    <input type="button" ng-click="back()" value="Cancel" class="topcoat-button right half"/>
+</div>
+</div>
